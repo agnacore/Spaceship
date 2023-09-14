@@ -1,4 +1,4 @@
-package game;
+package com.agnacore.spaceship.game;
 
 public class Missile extends Projectile {
 	// the big one
