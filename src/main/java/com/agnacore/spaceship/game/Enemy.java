@@ -1,4 +1,4 @@
-package game;
+package com.agnacore.spaceship.game;
 
 public class Enemy extends Ship {
 	// unique enemy stuff like moving and shooting logic

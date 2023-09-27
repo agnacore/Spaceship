@@ -1,4 +1,4 @@
-package game;
+package com.agnacore.spaceship.game;
 
 public class Player extends Ship {
 	// unique player stuff like moving and input

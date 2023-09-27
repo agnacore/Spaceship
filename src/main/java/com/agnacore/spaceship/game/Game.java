@@ -1,4 +1,4 @@
-package game;
+package com.agnacore.spaceship.game;
 
 public class Game {
 	// store variables like lives, score, etc.
