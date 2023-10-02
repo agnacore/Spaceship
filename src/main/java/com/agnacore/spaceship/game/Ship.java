@@ -1,5 +1,10 @@
 package com.agnacore.spaceship.game;
 
+import javafx.scene.Node;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Rectangle;
+
 public class Ship {
 	// superclass baybee
 	// any character on screen, so basically the player and enemies
@@ -9,6 +14,7 @@ public class Ship {
 	private int health, speed;
 	private int[] position;
 	private int[] offset;
+	private Node sprite;
 	
 	public Ship(int h, int s, int x, int y, int width, int height) {
 		this.health = h;
@@ -24,6 +30,9 @@ public class Ship {
 		this.offset = new int[2];
 		this.offset[0] = width / 2;
 		this.offset[1] = height / 2;
+
+		// TODO This could eventually be an image?
+		sprite = new Rectangle(45, 45, Color.BLACK);
 	}
 	
 	public int getHealth() { return health; }
@@ -42,5 +51,9 @@ public class Ship {
 	public int[] getPosition() { return new int[] {position[0], position[1]}; }
 	
 	public int[] getOffset() { return new int[] {offset[0], offset[1]}; }
+
+	public Node getSprite() { return sprite; }
+
+	public void setSprite(Node sprite) { this.sprite = sprite; }
 	
 }
