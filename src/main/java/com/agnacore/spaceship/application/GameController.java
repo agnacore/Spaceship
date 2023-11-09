@@ -26,6 +26,7 @@ public class GameController {
         ships.add(new Player(0, 0, (int)gamePane.getPrefWidth() / 2, (int)gamePane.getPrefHeight() / 2, 45, 45));
         ships.add(new Enemy(0, 0, 0, 0 ,45, 45));
         // TEMP Draw all ships
+        System.out.println("Hello");
         for (Ship ship : ships) {
             ship.getSprite().setTranslateX(ship.getPosition()[0]);
             ship.getSprite().setTranslateY(ship.getPosition()[1]);

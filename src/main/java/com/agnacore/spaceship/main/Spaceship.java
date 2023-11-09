@@ -21,6 +21,7 @@ public class Spaceship extends Application {
 		GameController gameController = loader.getController();
 		gameController.setStage(primaryStage);
 		primaryStage.show();
+		System.out.println("Hello, again");
 	}
 
 }
