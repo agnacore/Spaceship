@@ -1,6 +1,7 @@
 package com.agnacore.spaceship.main;
 
 import com.agnacore.spaceship.application.GameController;
+import com.agnacore.spaceship.application.MainMenuController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -16,10 +17,10 @@ public class Spaceship extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		FXMLLoader loader = new FXMLLoader(GameController.class.getClassLoader().getResource("game_view.fxml"));
+		FXMLLoader loader = new FXMLLoader(MainMenuController.class.getClassLoader().getResource("main_menu.fxml"));
 		primaryStage.setScene(new Scene(loader.load()));
-		GameController gameController = loader.getController();
-		gameController.setStage(primaryStage);
+		MainMenuController mainMenuController = loader.getController();
+		mainMenuController.setStage(primaryStage);
 		primaryStage.show();
 	}
 
